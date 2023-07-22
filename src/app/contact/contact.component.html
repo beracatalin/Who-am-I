@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="section-education" class="content-section wf-section">
+        <div class="section-header w-container">
+            <div class="div-section-header">
+                <div class="title">
+                    <h1 class="heading-5">✉️</h1>
+                    <h1 class="h2">Contact</h1>
+                </div>
+            </div>
+        </div>
+        <div class="card m-3">
+            <h2>Lasă un mesaj sau o sugestie</h2>
+            <div class="card-body">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label class="form-label">Nume</label>
+                            <input type="text" formControlName="nume" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nume.errors }" />
+                            <div *ngIf="submitted && f.nume.errors" class="invalid-feedback">
+                                <div *ngIf="f.nume.errors.required">Numele este necesar</div>
+                                <div *ngIf="f.nume.errors.maxlength">Numele trebuie să conțină maxim 15 caractere</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label class="form-label">Prenume</label>
+                            <input type="text" formControlName="prenume" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.prenume.errors }" />
+                            <div *ngIf="submitted && f.prenume.errors" class="invalid-feedback">
+                                <div *ngIf="f.prenume.errors.required">Prenumele este necesar</div>
+                                <div *ngIf="f.prenume.errors.maxlength">Prenumele trebuie să conțină maxim 15 caractere</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label class="form-label">Mesaj</label>
+                            <input type="text" formControlName="mesaj" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.mesaj.errors }" />
+                            <div *ngIf="submitted && f.mesaj.errors" class="invalid-feedback">
+                                <div *ngIf="f.mesaj.errors.required">Mesajul este necesar</div>
+                                <div *ngIf="f.mesaj.errors.minlength">Mesajul trebuie să conțină minim 10 caractere</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <div *ngIf="f.email.errors.required">Email-ul este necesar</div>
+                                <div *ngIf="f.email.errors.email">Email-ul este invalid</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary me-2">Submit</button>
+                        <button class="btn btn-secondary" type="reset" (click)="onReset()">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p>Sau puteți să ma contactați pe <a href="mailto:catalinbera70@yahoo.com">email</a></p>
+    </div>
+</body>
+</html>

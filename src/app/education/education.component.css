@@ -1,0 +1,112 @@
+.content-section{
+    display: block;
+    margin-right: 5%;
+    margin-bottom: 100px;
+    margin-left: 5%;
+}
+.section-header{
+    display: flex;
+    max-width: 1040px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.w-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-section-header{
+    display:inline-block;
+    width: 1040px;
+    height: 70px;
+    float: none;
+    border-bottom: 1px solid #e1e1e1;
+    object-fit: fill;
+}
+.title{
+    position:static;
+    display: flex;
+    height: 70px;
+    padding-right: 20px;
+    padding-left: 0;
+    align-items: center;
+}
+.heading-5{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+h1{
+    font-size: 38px;
+    line-height: 44px;
+}
+.h2{
+    position: static;
+    display: block;
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: none;
+    clear: none;
+    flex: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #272727;
+    font-size: 20px;
+    line-height: 70px;
+    font-weight: 700;
+    object-fit: contain;
+}
+.section-homepage{
+    display: flex;
+    max-width: 1040px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: normal;
+    align-items: normal;
+    margin: 60px 5%;
+}
+.w-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-text-l{
+    display:flex;
+    width:100%;
+    height:auto;
+    max-width: 495px;
+    margin-right:3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center;
+    flex:1;
+}
+.text-education{
+    max-width: 100%;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:20px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+}
+
+.div-image-r{
+    display:flex;
+    width: 100%;
+    height: auto;
+    max-width: 495px;
+    margin-left: 2%;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+.image-placement{
+    max-width: 100%;
+    flex: 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
